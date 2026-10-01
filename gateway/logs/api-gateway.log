@@ -1,0 +1,25 @@
+2026-10-01T10:06:05.394Z  INFO 39290 --- [api-gateway] [main] com.example.gateway.GatewayApplication   : Starting GatewayApplication using Java 25.0.4.1 with PID 39290 (/workspaces/spring-api-gateway/gateway/target/classes started by codespace in /workspaces/spring-api-gateway/gateway)
+2026-10-01T10:06:05.398Z  INFO 39290 --- [api-gateway] [main] com.example.gateway.GatewayApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-10-01T10:06:06.316Z  INFO 39290 --- [api-gateway] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c83c6be0-00e0-3e4b-bb00-28fe162a3901
+2026-10-01T10:06:06.889Z  WARN 39290 --- [api-gateway] [main] o.h.v.i.m.a.CascadingMetaDataBuilder     : HV000271: Using `@Valid` on a container (java.util.List) is deprecated. You should apply the annotation on the type argument(s). Affected element: routes
+2026-10-01T10:06:06.949Z  WARN 39290 --- [api-gateway] [main] o.h.v.i.m.a.CascadingMetaDataBuilder     : HV000271: Using `@Valid` on a container (java.util.List) is deprecated. You should apply the annotation on the type argument(s). Affected element: filters
+2026-10-01T10:06:06.953Z  WARN 39290 --- [api-gateway] [main] o.h.v.i.m.a.CascadingMetaDataBuilder     : HV000271: Using `@Valid` on a container (java.util.List) is deprecated. You should apply the annotation on the type argument(s). Affected element: predicates
+2026-10-01T10:06:07.083Z  INFO 39290 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2026-10-01T10:06:07.084Z  INFO 39290 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2026-10-01T10:06:07.084Z  INFO 39290 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2026-10-01T10:06:07.084Z  INFO 39290 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2026-10-01T10:06:07.084Z  INFO 39290 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2026-10-01T10:06:07.084Z  INFO 39290 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2026-10-01T10:06:07.085Z  INFO 39290 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2026-10-01T10:06:07.085Z  INFO 39290 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2026-10-01T10:06:07.085Z  INFO 39290 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2026-10-01T10:06:07.085Z  INFO 39290 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2026-10-01T10:06:07.085Z  INFO 39290 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2026-10-01T10:06:07.086Z  INFO 39290 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Version]
+2026-10-01T10:06:07.086Z  INFO 39290 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-10-01T10:06:07.086Z  INFO 39290 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2026-10-01T10:06:07.086Z  INFO 39290 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-10-01T10:06:07.368Z  INFO 39290 --- [api-gateway] [main] o.s.boot.reactor.netty.NettyWebServer    : Netty started on port 8080 (http)
+2026-10-01T10:06:07.437Z  INFO 39290 --- [api-gateway] [main] com.example.gateway.GatewayApplication   : Started GatewayApplication in 2.55 seconds (process running for 3.407)
+2026-10-01T10:06:17.224Z  INFO 39290 --- [api-gateway] [reactor-http-epoll-3] com.example.gateway.LoggingFilter        : Incoming Request: GET /api/users
+2026-10-01T10:06:17.799Z  INFO 39290 --- [api-gateway] [reactor-http-epoll-3] com.example.gateway.LoggingFilter        : Completed Request: GET /api/users | Status: 302 FOUND | Time: 574 ms
