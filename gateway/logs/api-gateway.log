@@ -23,3 +23,134 @@
 2026-10-01T10:06:07.437Z  INFO 39290 --- [api-gateway] [main] com.example.gateway.GatewayApplication   : Started GatewayApplication in 2.55 seconds (process running for 3.407)
 2026-10-01T10:06:17.224Z  INFO 39290 --- [api-gateway] [reactor-http-epoll-3] com.example.gateway.LoggingFilter        : Incoming Request: GET /api/users
 2026-10-01T10:06:17.799Z  INFO 39290 --- [api-gateway] [reactor-http-epoll-3] com.example.gateway.LoggingFilter        : Completed Request: GET /api/users | Status: 302 FOUND | Time: 574 ms
+2026-10-01T10:12:56.188Z  INFO 39290 --- [api-gateway] [reactor-http-epoll-3] com.example.gateway.LoggingFilter        : Incoming Request: GET /api/users
+2026-10-01T10:12:56.235Z  INFO 39290 --- [api-gateway] [reactor-http-epoll-3] com.example.gateway.LoggingFilter        : Completed Request: GET /api/users | Status: 302 FOUND | Time: 47 ms
+2026-10-01T10:13:18.727Z  INFO 39290 --- [api-gateway] [reactor-http-epoll-2] com.example.gateway.LoggingFilter        : Incoming Request: GET /api/orders
+2026-10-01T10:13:18.848Z  INFO 39290 --- [api-gateway] [reactor-http-epoll-2] com.example.gateway.LoggingFilter        : Completed Request: GET /api/orders | Status: 302 FOUND | Time: 121 ms
+2026-10-01T10:28:06.018Z  INFO 39290 --- [api-gateway] [SpringApplicationShutdownHook] o.s.boot.reactor.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-01T10:28:06.021Z  INFO 39290 --- [api-gateway] [netty-shutdown] o.s.boot.reactor.netty.GracefulShutdown  : Graceful shutdown complete
+2026-10-01T10:29:25.493Z  INFO 49408 --- [api-gateway] [main] c.e.gateway.GatewayApplicationTests      : Starting GatewayApplicationTests using Java 25.0.4.1 with PID 49408 (started by codespace in /workspaces/spring-api-gateway/gateway)
+2026-10-01T10:29:25.497Z  INFO 49408 --- [api-gateway] [main] c.e.gateway.GatewayApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2026-10-01T10:29:26.726Z  INFO 49408 --- [api-gateway] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-10-01T10:29:26.728Z  INFO 49408 --- [api-gateway] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-10-01T10:29:26.779Z  INFO 49408 --- [api-gateway] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2026-10-01T10:29:26.954Z  INFO 49408 --- [api-gateway] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5ea5b916-4fbb-3d72-bd9c-6e64c68daea6
+2026-10-01T10:29:28.497Z  WARN 49408 --- [api-gateway] [main] o.h.v.i.m.a.CascadingMetaDataBuilder     : HV000271: Using `@Valid` on a container (java.util.List) is deprecated. You should apply the annotation on the type argument(s). Affected element: routes
+2026-10-01T10:29:28.568Z  WARN 49408 --- [api-gateway] [main] o.h.v.i.m.a.CascadingMetaDataBuilder     : HV000271: Using `@Valid` on a container (java.util.List) is deprecated. You should apply the annotation on the type argument(s). Affected element: predicates
+2026-10-01T10:29:28.570Z  WARN 49408 --- [api-gateway] [main] o.h.v.i.m.a.CascadingMetaDataBuilder     : HV000271: Using `@Valid` on a container (java.util.List) is deprecated. You should apply the annotation on the type argument(s). Affected element: filters
+2026-10-01T10:29:28.721Z  INFO 49408 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2026-10-01T10:29:28.722Z  INFO 49408 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2026-10-01T10:29:28.722Z  INFO 49408 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2026-10-01T10:29:28.722Z  INFO 49408 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2026-10-01T10:29:28.722Z  INFO 49408 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2026-10-01T10:29:28.723Z  INFO 49408 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2026-10-01T10:29:28.725Z  INFO 49408 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2026-10-01T10:29:28.725Z  INFO 49408 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2026-10-01T10:29:28.725Z  INFO 49408 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2026-10-01T10:29:28.725Z  INFO 49408 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2026-10-01T10:29:28.726Z  INFO 49408 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2026-10-01T10:29:28.726Z  INFO 49408 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Version]
+2026-10-01T10:29:28.727Z  INFO 49408 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-10-01T10:29:28.727Z  INFO 49408 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2026-10-01T10:29:28.727Z  INFO 49408 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-10-01T10:29:29.234Z  INFO 49408 --- [api-gateway] [main] c.e.gateway.GatewayApplicationTests      : Started GatewayApplicationTests in 4.238 seconds (process running for 6.429)
+2026-10-01T10:33:19.139Z  INFO 51268 --- [api-gateway] [main] com.example.gateway.GatewayApplication   : Starting GatewayApplication using Java 25.0.4.1 with PID 51268 (/workspaces/spring-api-gateway/gateway/target/classes started by codespace in /workspaces/spring-api-gateway/gateway)
+2026-10-01T10:33:19.143Z  INFO 51268 --- [api-gateway] [main] com.example.gateway.GatewayApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-10-01T10:33:20.003Z  INFO 51268 --- [api-gateway] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-10-01T10:33:20.006Z  INFO 51268 --- [api-gateway] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-10-01T10:33:20.029Z  INFO 51268 --- [api-gateway] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2026-10-01T10:33:20.142Z  INFO 51268 --- [api-gateway] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d296b080-c577-3e97-bd9a-4bee03560d52
+2026-10-01T10:33:21.015Z  WARN 51268 --- [api-gateway] [main] o.h.v.i.m.a.CascadingMetaDataBuilder     : HV000271: Using `@Valid` on a container (java.util.List) is deprecated. You should apply the annotation on the type argument(s). Affected element: routes
+2026-10-01T10:33:21.089Z  WARN 51268 --- [api-gateway] [main] o.h.v.i.m.a.CascadingMetaDataBuilder     : HV000271: Using `@Valid` on a container (java.util.List) is deprecated. You should apply the annotation on the type argument(s). Affected element: filters
+2026-10-01T10:33:21.090Z  WARN 51268 --- [api-gateway] [main] o.h.v.i.m.a.CascadingMetaDataBuilder     : HV000271: Using `@Valid` on a container (java.util.List) is deprecated. You should apply the annotation on the type argument(s). Affected element: predicates
+2026-10-01T10:33:21.195Z  INFO 51268 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2026-10-01T10:33:21.196Z  INFO 51268 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2026-10-01T10:33:21.197Z  INFO 51268 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2026-10-01T10:33:21.198Z  INFO 51268 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2026-10-01T10:33:21.198Z  INFO 51268 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2026-10-01T10:33:21.198Z  INFO 51268 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2026-10-01T10:33:21.198Z  INFO 51268 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2026-10-01T10:33:21.199Z  INFO 51268 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2026-10-01T10:33:21.199Z  INFO 51268 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2026-10-01T10:33:21.200Z  INFO 51268 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2026-10-01T10:33:21.201Z  INFO 51268 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2026-10-01T10:33:21.201Z  INFO 51268 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Version]
+2026-10-01T10:33:21.201Z  INFO 51268 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-10-01T10:33:21.202Z  INFO 51268 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2026-10-01T10:33:21.202Z  INFO 51268 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-10-01T10:33:21.481Z  INFO 51268 --- [api-gateway] [main] o.s.boot.reactor.netty.NettyWebServer    : Netty started on port 8080 (http)
+2026-10-01T10:33:21.550Z  INFO 51268 --- [api-gateway] [main] com.example.gateway.GatewayApplication   : Started GatewayApplication in 2.909 seconds (process running for 3.525)
+2026-10-01T11:04:19.578Z  INFO 51268 --- [api-gateway] [reactor-http-epoll-3] com.example.gateway.LoggingFilter        : Incoming Request: GET /api/users
+2026-10-01T11:04:20.098Z  INFO 51268 --- [api-gateway] [reactor-http-epoll-3] com.example.gateway.LoggingFilter        : Completed Request: GET /api/users | Status: 302 FOUND | Time: 520 ms
+2026-10-01T11:05:35.456Z  INFO 51268 --- [api-gateway] [reactor-http-epoll-3] com.example.gateway.LoggingFilter        : Incoming Request: GET /api/users
+2026-10-01T11:05:35.497Z  INFO 51268 --- [api-gateway] [reactor-http-epoll-3] com.example.gateway.LoggingFilter        : Completed Request: GET /api/users | Status: 302 FOUND | Time: 41 ms
+2026-10-01T11:05:41.621Z  INFO 51268 --- [api-gateway] [reactor-http-epoll-2] com.example.gateway.LoggingFilter        : Incoming Request: GET /api/users
+2026-10-01T11:05:41.643Z  INFO 51268 --- [api-gateway] [reactor-http-epoll-3] com.example.gateway.LoggingFilter        : Completed Request: GET /api/users | Status: 302 FOUND | Time: 22 ms
+2026-10-01T11:05:54.544Z  INFO 51268 --- [api-gateway] [SpringApplicationShutdownHook] o.s.boot.reactor.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-01T11:05:54.549Z  INFO 51268 --- [api-gateway] [netty-shutdown] o.s.boot.reactor.netty.GracefulShutdown  : Graceful shutdown complete
+2026-10-01T11:08:05.484Z  INFO 67695 --- [api-gateway] [main] com.example.gateway.GatewayApplication   : Starting GatewayApplication using Java 25.0.4.1 with PID 67695 (/workspaces/spring-api-gateway/gateway/target/classes started by codespace in /workspaces/spring-api-gateway/gateway)
+2026-10-01T11:08:05.488Z  INFO 67695 --- [api-gateway] [main] com.example.gateway.GatewayApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-10-01T11:08:06.381Z  INFO 67695 --- [api-gateway] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-10-01T11:08:06.383Z  INFO 67695 --- [api-gateway] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-10-01T11:08:06.407Z  INFO 67695 --- [api-gateway] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2026-10-01T11:08:06.605Z  INFO 67695 --- [api-gateway] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7763c7f2-2265-3eaf-8f4a-f1cea8bdec81
+2026-10-01T11:08:07.482Z  WARN 67695 --- [api-gateway] [main] o.h.v.i.m.a.CascadingMetaDataBuilder     : HV000271: Using `@Valid` on a container (java.util.List) is deprecated. You should apply the annotation on the type argument(s). Affected element: routes
+2026-10-01T11:08:07.535Z  WARN 67695 --- [api-gateway] [main] o.h.v.i.m.a.CascadingMetaDataBuilder     : HV000271: Using `@Valid` on a container (java.util.List) is deprecated. You should apply the annotation on the type argument(s). Affected element: predicates
+2026-10-01T11:08:07.535Z  WARN 67695 --- [api-gateway] [main] o.h.v.i.m.a.CascadingMetaDataBuilder     : HV000271: Using `@Valid` on a container (java.util.List) is deprecated. You should apply the annotation on the type argument(s). Affected element: filters
+2026-10-01T11:08:07.616Z  INFO 67695 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2026-10-01T11:08:07.619Z  INFO 67695 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2026-10-01T11:08:07.619Z  INFO 67695 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2026-10-01T11:08:07.619Z  INFO 67695 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2026-10-01T11:08:07.620Z  INFO 67695 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2026-10-01T11:08:07.620Z  INFO 67695 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2026-10-01T11:08:07.620Z  INFO 67695 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2026-10-01T11:08:07.621Z  INFO 67695 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2026-10-01T11:08:07.621Z  INFO 67695 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2026-10-01T11:08:07.621Z  INFO 67695 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2026-10-01T11:08:07.621Z  INFO 67695 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2026-10-01T11:08:07.622Z  INFO 67695 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Version]
+2026-10-01T11:08:07.622Z  INFO 67695 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-10-01T11:08:07.622Z  INFO 67695 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2026-10-01T11:08:07.623Z  INFO 67695 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-10-01T11:08:07.905Z  INFO 67695 --- [api-gateway] [main] o.s.boot.reactor.netty.NettyWebServer    : Netty started on port 8080 (http)
+2026-10-01T11:08:08.034Z  INFO 67695 --- [api-gateway] [main] com.example.gateway.GatewayApplication   : Started GatewayApplication in 3.123 seconds (process running for 3.794)
+2026-10-01T11:08:21.936Z  INFO 67695 --- [api-gateway] [lettuce-epollEventLoop-5-1] com.example.gateway.LoggingFilter        : Incoming Request: GET /api/users
+2026-10-01T11:08:22.548Z  INFO 67695 --- [api-gateway] [reactor-http-epoll-1] com.example.gateway.LoggingFilter        : Completed Request: GET /api/users | Status: 302 FOUND | Time: 612 ms
+2026-10-01T11:33:12.111Z  INFO 67695 --- [api-gateway] [lettuce-epollEventLoop-5-1] com.example.gateway.LoggingFilter        : Incoming Request: GET /api/users
+2026-10-01T11:33:12.162Z  INFO 67695 --- [api-gateway] [reactor-http-epoll-3] com.example.gateway.LoggingFilter        : Completed Request: GET /api/users | Status: 302 FOUND | Time: 51 ms
+2026-10-01T11:39:53.829Z  INFO 67695 --- [api-gateway] [lettuce-epollEventLoop-5-1] com.example.gateway.LoggingFilter        : Incoming Request: GET /api/users
+2026-10-01T11:39:53.922Z  INFO 67695 --- [api-gateway] [reactor-http-epoll-3] com.example.gateway.LoggingFilter        : Completed Request: GET /api/users | Status: 302 FOUND | Time: 93 ms
+2026-10-01T11:43:51.130Z  INFO 67695 --- [api-gateway] [SpringApplicationShutdownHook] o.s.boot.reactor.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-01T11:43:51.133Z  INFO 67695 --- [api-gateway] [netty-shutdown] o.s.boot.reactor.netty.GracefulShutdown  : Graceful shutdown complete
+2026-10-01T11:44:03.673Z  INFO 83563 --- [api-gateway] [main] com.example.gateway.GatewayApplication   : Starting GatewayApplication using Java 25.0.4.1 with PID 83563 (/workspaces/spring-api-gateway/gateway/target/classes started by codespace in /workspaces/spring-api-gateway/gateway)
+2026-10-01T11:44:03.677Z  INFO 83563 --- [api-gateway] [main] com.example.gateway.GatewayApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-10-01T11:44:04.551Z  INFO 83563 --- [api-gateway] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-10-01T11:44:04.553Z  INFO 83563 --- [api-gateway] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-10-01T11:44:04.578Z  INFO 83563 --- [api-gateway] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2026-10-01T11:44:04.747Z  INFO 83563 --- [api-gateway] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7763c7f2-2265-3eaf-8f4a-f1cea8bdec81
+2026-10-01T11:44:05.626Z  WARN 83563 --- [api-gateway] [main] o.h.v.i.m.a.CascadingMetaDataBuilder     : HV000271: Using `@Valid` on a container (java.util.List) is deprecated. You should apply the annotation on the type argument(s). Affected element: routes
+2026-10-01T11:44:05.685Z  WARN 83563 --- [api-gateway] [main] o.h.v.i.m.a.CascadingMetaDataBuilder     : HV000271: Using `@Valid` on a container (java.util.List) is deprecated. You should apply the annotation on the type argument(s). Affected element: predicates
+2026-10-01T11:44:05.686Z  WARN 83563 --- [api-gateway] [main] o.h.v.i.m.a.CascadingMetaDataBuilder     : HV000271: Using `@Valid` on a container (java.util.List) is deprecated. You should apply the annotation on the type argument(s). Affected element: filters
+2026-10-01T11:44:05.775Z  INFO 83563 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2026-10-01T11:44:05.775Z  INFO 83563 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2026-10-01T11:44:05.775Z  INFO 83563 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2026-10-01T11:44:05.776Z  INFO 83563 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2026-10-01T11:44:05.776Z  INFO 83563 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2026-10-01T11:44:05.776Z  INFO 83563 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2026-10-01T11:44:05.776Z  INFO 83563 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2026-10-01T11:44:05.777Z  INFO 83563 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2026-10-01T11:44:05.777Z  INFO 83563 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2026-10-01T11:44:05.777Z  INFO 83563 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2026-10-01T11:44:05.777Z  INFO 83563 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2026-10-01T11:44:05.777Z  INFO 83563 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Version]
+2026-10-01T11:44:05.778Z  INFO 83563 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-10-01T11:44:05.778Z  INFO 83563 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2026-10-01T11:44:05.778Z  INFO 83563 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-10-01T11:44:06.074Z  INFO 83563 --- [api-gateway] [main] o.s.boot.reactor.netty.NettyWebServer    : Netty started on port 8080 (http)
+2026-10-01T11:44:06.187Z  INFO 83563 --- [api-gateway] [main] com.example.gateway.GatewayApplication   : Started GatewayApplication in 3.053 seconds (process running for 3.777)
+2026-10-01T11:45:44.265Z  INFO 83563 --- [api-gateway] [lettuce-epollEventLoop-5-1] com.example.gateway.LoggingFilter        : Incoming Request: GET /api/users
+2026-10-01T11:45:44.773Z  INFO 83563 --- [api-gateway] [reactor-http-epoll-4] com.example.gateway.LoggingFilter        : Completed Request: GET /api/users | Status: 302 FOUND | Time: 508 ms
+2026-10-01T11:46:03.316Z  INFO 83563 --- [api-gateway] [lettuce-epollEventLoop-5-1] com.example.gateway.LoggingFilter        : Incoming Request: GET /api/users
+2026-10-01T11:46:03.335Z  INFO 83563 --- [api-gateway] [reactor-http-epoll-4] com.example.gateway.LoggingFilter        : Completed Request: GET /api/users | Status: 302 FOUND | Time: 19 ms
+2026-10-01T11:46:05.584Z  INFO 83563 --- [api-gateway] [lettuce-epollEventLoop-5-1] com.example.gateway.LoggingFilter        : Incoming Request: GET /api/users
+2026-10-01T11:46:05.603Z  INFO 83563 --- [api-gateway] [reactor-http-epoll-4] com.example.gateway.LoggingFilter        : Completed Request: GET /api/users | Status: 302 FOUND | Time: 19 ms

@@ -24,10 +24,16 @@
 
     <dependencies>
 
-        <!-- Spring Cloud Gateway -->
+        <!-- Spring Cloud Gateway - WebFlux -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-gateway-server-webflux</artifactId>
+        </dependency>
+
+        <!-- Reactive Redis - required for Redis rate limiting -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis-reactive</artifactId>
         </dependency>
 
         <!-- Testing -->
